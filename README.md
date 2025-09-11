@@ -11,8 +11,12 @@ As part of the 2020 strategic planning process, the Rockbuster Stealth Managemen
 4. Where are customers with a high lifetime value based?
 5. Do sales figures vary between geographic regions?
 
-## Data & Tools
+## Systems Used
+pgAdmin4: For managing PostgreSQL databases.
+PostgreSQL: Relational database management system (RDBMS) used to store and query Rockbuster's data.
+Tableau Public: Platform for creating and sharing interactive data visualizations.
 
-Rockbuster relational database management system and Postgre SQL was used for the analysis purpose. The data set includes information about Rockbuster’s film inventory, customers, payments, stores, staff, films, actors, rental history and addresses. pgAdmin 4 and Posrtges SQL were used when working with data, and Tableau Public was used to create visualizations. 
+## Data Overview
+The dataset includes comprehensive information on Rockbuster’s film inventory, customer profiles, and payment transactions.
 
 View visualizations here: https://public.tableau.com/app/profile/milena.nedyalkova/vizzes
