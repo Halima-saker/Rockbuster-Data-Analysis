@@ -1,4 +1,4 @@
-With this query we find the average amount paid by the top 5 customers: 
+-- With this query we find the average amount paid by the top 5 customers: 
 
 SELECT AVG (total_amount_paid) AS avg_amount_paid
 FROM (SELECT A.customer_id, A.first_name, A.last_name, C.city, D.country, SUM(amount) AS total_amount_paid
@@ -30,7 +30,7 @@ LIMIT 5) AS mean;
 
 
 
-This second query helps us to find out how many of the top 5 customers we identified in step 1 are based within each country.
+-- This second query helps us to find out how many of the top 5 customers we identified in step 1 are based within each country.
 
 SELECT couA.country,
 COUNT(DISTINCT custA.customer_id) AS all_customer_count,
@@ -72,6 +72,6 @@ ORDER BY top_customer_count DESC, all_customer_count DESC
 LIMIT 5;
 
 
-While steps 1 and 2 could technically be done without subqueries, combining all logic into a single large query would make it harder to read, maintain and debug. 
+/*While steps 1 and 2 could technically be done without subqueries, combining all logic into a single large query would make it harder to read, maintain and debug. 
 Subqueries allow us to isolate specific tasks (like calculating the average amount paid by the top 5 customers) and handle complex aggregations more cleanly. 
-They help break down problems into manageable parts, improving clarity and reducing the risk of error.
+They help break down problems into manageable parts, improving clarity and reducing the risk of error.*/
